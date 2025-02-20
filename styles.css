@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #50C878;
+    --primary-hover: #3DA35D;
+    --background-color: #111;
+    --header-bg: #000;
+    --text-color: #ddd;
+    --text-muted: #aaa;
+    --card-bg: #222;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: var(--header-bg);
+}
+
+b {
+    color: var(--primary-color); 
+}
+
+header h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 50px;
+    text-align: left;
+}
+
+.intro-text {
+    max-width: 500px;
+    line-height: 25px;
+}
+
+.intro-text h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.intro-text span {
+    color: var(--primary-color);
+}
+
+.intro-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-hover);
+}
+
+.intro-image img {
+    margin: auto 70px;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.about h2, .projects h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    color: var(--primary-color);
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}

@@ -1,13 +1,14 @@
 :root {
-    --primary-color: #50C878;
-    --primary-hover: #3DA35D;
-    --background-color: #111;
-    --header-bg: #000;
-    --text-color: #ddd;
-    --text-muted: #aaa;
-    --card-bg: #222;
-    --font-family: Arial, sans-serif;
-     --font-family2: 'Fira Code', 'Courier New', monospace;
+    --primary-color: #2E7D32;
+    --primary-hover: #1B5E20;
+    --background-color: #F5F5F5;
+    --header-bg: #FFFFFF;
+    --text-color: #212121;
+    --text-muted: #757575;
+    --card-bg: #FFFFFF;
+    --font-family: 'Poppins', sans-serif;
+    --font-family2: 'Fira Code', 'Courier New', monospace;
+    --shadow-color: rgba(0, 0, 0, 0.08);
 }
 
 body {
@@ -22,24 +23,28 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
+    padding: 20px 50px;
     background: var(--header-bg);
+    box-shadow: 0 4px 12px var(--shadow-color);
 }
 
 b {
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 header h1 {
-    color: #fff;
+    color: var(--text-color);
     font-family: var(--font-family2);
-    filter: drop-shadow(1px 1px 5px var(--primary-color));
+    filter: drop-shadow(1px 1px 5px var(--shadow-color));
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -49,7 +54,9 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: var(--text-muted);
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
@@ -64,93 +71,101 @@ nav ul li a:hover {
     height: 80vh;
     padding: 50px;
     text-align: left;
-    gap: 20px;
+    gap: 30px;
 }
 
 .intro-text {
-    max-width: 500px;
-    line-height: 25px;
+    max-width: 600px;
+    line-height: 30px;
 }
 
 .intro-text h2 {
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-weight: 700;
 }
 
 .intro-text span {
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .intro-text p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: var(--text-muted);
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 14px 28px;
     background-color: var(--primary-color);
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background 0.3s ease;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 10px var(--shadow-color);
 }
 
 .btn:hover {
     background-color: var(--primary-hover);
+    transform: translateY(-2px);
 }
 
 .intro-image img {
-    margin: auto 70px;
-    width: 350px;
+    margin: auto 50px;
+    width: 400px;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px var(--shadow-color);
 }
 
-/* img {
-    filter: drop-shadow(1px 1px 20px var(--primary-color));
-} */
-
 .container {
-    max-width: 80%;
+    max-width: 75%;
     margin: 50px auto;
     text-align: center;
 }
 
 .about h2, .projects h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    font-weight: 700;
 }
 
 .project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .project {
     background: var(--card-bg);
-    padding: 20px;
-    border-radius: 8px;
-    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+    width: 270px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
+    box-shadow: 0 6px 12px var(--shadow-color);
 }
 
 .project h3 {
     color: var(--primary-color);
+    font-weight: 600;
 }
 
 .project a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 12px;
     color: var(--primary-color);
     text-decoration: none;
     font-weight: bold;
@@ -161,17 +176,18 @@ nav ul li a:hover {
 }
 
 .social-links {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .social-links a {
     display: inline-block;
-    margin: 0 10px;
-    font-size: 25px;
+    margin: 0 12px;
+    font-size: 26px;
     color: var(--text-muted);
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.2s ease;
 }
 
 .social-links a:hover {
-    color: var(--primary-hover); 
+    color: var(--primary-hover);
+    transform: translateY(-3px);
 }

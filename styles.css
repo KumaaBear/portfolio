@@ -21,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 50px;
     background: var(--header-bg);
 }
 
@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #fff;
+    color: var(--primary-hover);
 }
 
 .intro-section {
@@ -103,6 +103,10 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+/* img {
+    filter: drop-shadow(1px 1px 20px var(--primary-color));
+} */
+
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -148,4 +152,20 @@ nav ul li a:hover {
 
 .project a:hover {
     text-decoration: underline;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 25px;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-hover); 
 }

@@ -3,44 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Niña Andrei</title>
-
+    <title>Niña Andrei | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
     <header>
         <h1>ANDREI</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="intro-section">
+    <section id="home" class="intro-section">
         <div class="intro-text">
             <h2>Hello! I'm <span>Niña</span></h2>
-            <p>a front-end developer who brings ideas to life with clean, responsive, and interactive designs. Let’s build something amazing!</p>
-
+            <p>A front-end developer who brings ideas to life with clean, responsive, and interactive designs. Let’s build something amazing!</p>
             <div class="social-links">
                 <a href="https://kumaabear.github.io/portfolio/index.html" target="_blank"><i class="fab fa-github"></i></a>
-
                 <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin"></i></a>
-
                 <a href="mailto:ninaandreianonuevo56@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
-
-            <a href="projects.html" class="btn">My Projects</a>
+            <a href="#projects" class="btn">My Projects</a>
         </div>
-        
         <div class="intro-image">
             <img src="image/1.png" alt="Niña Andrei's Photo">
         </div>
     </section>
 
+    <section id="projects" class="projects" style="background-color: #e0f2f1;">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>School Activity</h3>
+                    <p>A website about my hobbies created as a school activity.</p>
+                    <a href="https://kumaabear.github.io/html_project_html/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Sample Design for Thesis Website</h3>
+                    <p>A sample upload for our thesis development.</p>
+                    <a href="https://kumaabear.github.io/web-app-try/index.html" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Group Project</h3>
+                    <p>A university group project where I was the lead programmer.</p>
+                    <a href="https://john-darrell-guirao.github.io/GROUP-3_Cryptocurrency/indexCrypto.html" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>User-Usage Branch</h3>
+                    <p>Responsible for API connections and front-end functionality.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Login & Sign-up 'HMS'</h3>
+                    <p>Developed login and signup functionality.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Login 'Engage'</h3>
+                    <p>Worked on UI for user authentication.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Front-end using Next.js</h3>
+                    <p>Developed UI with Next.js and Tailwind CSS.</p>
+                    <a href="#" target="_blank">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a Bachelor of Science in Information Technology graduate from the University of the East, specializing in front-end development. With an HTML and CSS certification and hands-on internship experience, I have worked on both front-end and back-end development during my thesis project.</p>
+            <p>My expertise includes <b>Next.js</b>, <b>Tailwind CSS</b>, <b>Bootstrap</b>, <b>HTML</b>, and <b>CSS</b>, along with basic knowledge of <b>React.js</b> and <b>PHP</b>. I am passionate about building responsive, user-friendly web applications and continuously improving my skills in the tech industry.</p>
+        </div>
+    </section>
 </body>
 </html>

@@ -28,6 +28,7 @@ header {
     padding: 10px 50px;
     background: var(--header-bg);
     box-shadow: 0 4px 12px var(--shadow-color);
+    z-index: 1;
 }
 
 b {
@@ -118,13 +119,11 @@ nav ul li a:hover {
     border-radius: 6px;
     font-size: 18px;
     font-weight: 500;
-    transition: background 0.3s ease, transform 0.2s ease;
     box-shadow: 0 5px 10px var(--shadow-color);
 }
 
 .btn:hover {
     background-color: var(--primary-hover);
-    transform: translateY(-2px);
 }
 
 .intro-image img {
@@ -143,10 +142,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.about {
-    height: 100vh;
-}
-
 .about h2, .projects h2 {
     font-size: 38px;
     margin-bottom: 25px;
@@ -154,9 +149,10 @@ nav ul li a:hover {
     font-weight: 700;
 }
 
-.projects {
-    height: 100vh;
+.about, .projects {
+    min-height: 100vh; /* Ensures it takes at least the full screen height but expands if needed */
 }
+
 
 .project-list {
     display: flex;

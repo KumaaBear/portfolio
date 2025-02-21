@@ -58,11 +58,13 @@ nav ul li a:hover {
 
 .intro-section {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     height: 80vh;
     padding: 50px;
     text-align: left;
+    gap: 20px;
 }
 
 .intro-text {
@@ -112,7 +114,7 @@ nav ul li a:hover {
 } */
 
 .container {
-    max-width: 800px;
+    max-width: 80%;
     margin: 50px auto;
     text-align: center;
 }

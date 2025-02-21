@@ -21,9 +21,11 @@ body {
 
 header {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 10px 50px;
     background: var(--header-bg);
     box-shadow: 0 4px 12px var(--shadow-color);
 }
@@ -60,8 +62,18 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    font-weight: bold;
     color: var(--primary-hover);
 }
+
+.section {
+    scroll-margin-top: 80px; 
+}
+
+#home, #projects, #about {
+    scroll-margin-top: 100px; 
+}
+
 
 .intro-section {
     display: flex;
@@ -126,8 +138,13 @@ nav ul li a:hover {
 .container {
     max-width: 75%;
     margin: 50px auto;
-    padding: 25px 0;
+    padding-top: 5px;
+    padding-bottom: 50px;
     text-align: center;
+}
+
+.about {
+    height: 100vh;
 }
 
 .about h2, .projects h2 {
@@ -135,6 +152,10 @@ nav ul li a:hover {
     margin-bottom: 25px;
     color: var(--text-color);
     font-weight: 700;
+}
+
+.projects {
+    height: 100vh;
 }
 
 .project-list {
